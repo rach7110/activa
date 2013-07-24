@@ -18,5 +18,6 @@ vendor/bundle
 .DS_store
 
 /public/uploads/tmp
+/public/uploads/post
 # Ignore application configuration
 /config/application.yml
