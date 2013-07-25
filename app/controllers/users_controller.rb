@@ -9,7 +9,9 @@ class UsersController < ApplicationController
 
   def create
 	  @user = User.new(params[:user])
-	  if @user.save
+	  # @user[:email].downcase!
+    # @user.email.downcase!
+    if @user.save
 		  flash[:success] = "Welcome to my awesome app!"
 		  redirect_to @user
 	  else
